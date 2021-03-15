@@ -2,21 +2,22 @@ package modelo;
 
 public class Producto {
 
-	private String nombre;
+	private String nombrecito;
 	private double precio;
+	private boolean caducado;
 	
 	public Producto(String nombre, double precio) {
 		super();
-		this.nombre = nombre;
+		this.nombrecito = nombre;
 		this.precio = precio;
 	}
 
 	public String getNombre() {
-		return nombre;
+		return nombrecito;
 	}
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.nombrecito= nombre;
 	}
 
 	public double getPrecio() {
@@ -26,6 +27,15 @@ public class Producto {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
+
+	public boolean isCaducado() {
+		return caducado;
+	}
+
+	public void setCaducado(boolean caducado) {
+		this.caducado = caducado;
+	}
+	
 	
 	
 }
